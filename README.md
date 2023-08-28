@@ -35,7 +35,7 @@ You can test this middleware by sending HTTP requests with SQL-injection-like pa
   - Using curl
   - Using Postman
 ### For example,
-`curl "http://localhost:3000/test?param=1' OR '1'='1"`
+`curl "http://localhost:3000/test?param='1' OR "1"`
 
 This should result in a 400 status code response.
 ## Limitations
