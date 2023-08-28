@@ -7,10 +7,6 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(sqlInjectionDetector);
 
-// app.get("/", (req, res) => {
-//   res.send("Hello, World!");
-// });
-// Test GET endpoint
 app.get("/test", (req, res) => {
   const param = req.query.param;
   res.send(`Received parameter: ${param}`);
